@@ -1,19 +1,21 @@
-from algo_01_04 import SynchronizingTables
-
-N = 3
-ids = [50, 1, 1024]
-salary = [20000, 100000, 90000]
-
-print(f'salary [90000, 20000, 100000]: {SynchronizingTables(N, ids, salary)}')
+from algo_01_05 import PatternUnlock
 
 N = 1
-ids = [1]
-salary = [20000]
-
-print(f'salary [20000]: {SynchronizingTables(N, ids, salary)}')
+hits = [5]
+print(f'unblock "": {PatternUnlock(N, hits)}')
 
 N = 2
-ids = [23, 1]
-salary = [3, 20000]
+hits = [5, 3]
+print(f'unblock "141421": {PatternUnlock(N, hits)}')
 
-print(f'salary [20000, 3]: {SynchronizingTables(N, ids, salary)}')
+N = 7
+hits = [2,6,5,2,9,1,6]
+print(f'unblock "682843": {PatternUnlock(N, hits)}')
+
+N = 9
+hits = [6,2,9,1,5,3,8,1,5]
+print(f'unblock "189949": {PatternUnlock(N, hits)}')
+
+N = 10
+hits = [1,2,3,4,5,6,2,7,8,9]
+print(f'unblock "982843": {PatternUnlock(N, hits)}')
