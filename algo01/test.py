@@ -1,21 +1,17 @@
-from algo_01_07 import SumOfThe
+from algo_01_08 import TheRabbitsFoot
 
-N = 2
-data = [10, 11]
-print(f'SumOfThe = None: {SumOfThe(N, data)}')
+s = 'На основании N вычисляется размер матрицы в которую будет упакован'
+encode = True
+print(f'TheRabbitsFoot: {TheRabbitsFoot(s, encode)}')
 
-N = 2
-data = [10, 10]
-print(f'SumOfThe = 10: {SumOfThe(N, data)}')
+s = 'Ннсаротн аилзиру оиямцуп сNееыюа нвтрвбк оысмкуо вчяаодв аирттеа'
+encode = False
+print(f'TheRabbitsFoot: {TheRabbitsFoot(s, encode)}')
 
-N = 3
-data = [0, 10, -10]
-print(f'SumOfThe = 0: {SumOfThe(N, data)}')
+s = 'отдай мою кроличью лапку'
+encode = True
+print(f'TheRabbitsFoot = "омоюу толл дюиа акчп йрьк": {TheRabbitsFoot(s, encode)}')
 
-N = 5
-data = [10, -25, -45, -35, 5]
-print(f'SumOfThe = -45: {SumOfThe(N, data)}')
-
-N = 7
-data = [100,-50, 10, -25, 90, -35, 90]
-print(f'SumOfThe = 90: {SumOfThe(N, data)}')
+s = "омоюу толл дюиа акчп йрьк"
+encode = False
+print(f'TheRabbitsFoot = "отдаймоюкроличьюлапку": {TheRabbitsFoot(s, encode)}')
