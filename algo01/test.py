@@ -1,17 +1,11 @@
-from algo_01_08 import TheRabbitsFoot
+from algo_01_09 import PrintingCosts
 
-s = 'На основании N вычисляется размер матрицы в которую будет упакован'
-encode = True
-print(f'TheRabbitsFoot: {TheRabbitsFoot(s, encode)}')
 
-s = 'Ннсаротн аилзиру оиямцуп сNееыюа нвтрвбк оысмкуо вчяаодв аирттеа'
-encode = False
-print(f'TheRabbitsFoot: {TheRabbitsFoot(s, encode)}')
+Line = '\\'
+print(f'PrintingCosts("{Line}"): {PrintingCosts(Line)}')
 
-s = 'отдай мою кроличью лапку'
-encode = True
-print(f'TheRabbitsFoot = "омоюу толл дюиа акчп йрьк": {TheRabbitsFoot(s, encode)}')
+Line = '`ы ,'
+print(f'PrintingCosts("{Line}"): {PrintingCosts(Line)}')
 
-s = "омоюу толл дюиа акчп йрьк"
-encode = False
-print(f'TheRabbitsFoot = "отдаймоюкроличьюлапку": {TheRabbitsFoot(s, encode)}')
+Line = 'B$Z'
+print(f'PrintingCosts("{Line}"): {PrintingCosts(Line)}')
