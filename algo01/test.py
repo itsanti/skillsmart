@@ -1,11 +1,12 @@
-from algo_01_09 import PrintingCosts
+from algo_01_10 import BigMinus
 
+td = [
+    ('0', '10'), ('10', '0'), ('0', '0'), ('5', '5'), ('8', '5'),
+    ('10', '12'),
+    ('102', '113'), ('112', '112'), ('300', '101'),
+    ("1234567891", "1"), ("1", "321"),
+    ('1000000353000020', '3003423'), ('10000000', '1'), ('1000000353000020', '1000000353000019')
+]
 
-Line = '\\'
-print(f'PrintingCosts("{Line}"): {PrintingCosts(Line)}')
-
-Line = '`ы ,'
-print(f'PrintingCosts("{Line}"): {PrintingCosts(Line)}')
-
-Line = 'B$Z'
-print(f'PrintingCosts("{Line}"): {PrintingCosts(Line)}')
+for e in td:
+    print(f'BigMinus: {abs(int(e[0]) - int(e[1]))}: {BigMinus(*e)}')
