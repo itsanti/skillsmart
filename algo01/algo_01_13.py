@@ -12,6 +12,9 @@ def Unmanned(L, N, track):
     for part in track:
         cur_t += part[0] - cur_t
         
+        if cur_t > L:
+            break
+        
         awt = part[1] - (cur_t + wait_t) % (part[1] + part[2])
         
         if awt > 0:
