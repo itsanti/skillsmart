@@ -17,7 +17,4 @@ def Unmanned(L, N, track):
         if awt > 0:
             wait_t += awt
     
-    if cur_t < L:
-        cur_t += L - cur_t
-    
-    return cur_t + wait_t
+    return L + wait_t
