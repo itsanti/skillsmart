@@ -1,13 +1,17 @@
-from algo_01_14 import MaximumDiscount
+from algo_01_15 import LineAnalysis
 
 td = [
-    ['450', 7, [400, 350, 300, 250, 200, 150, 100]],
-    ['3', 5, [1,2,3,4,5]],
-    ['0', 2, [1,2]],
-    ['1', 3, [1,2,4]],
+    ['True', '*..*..*..*..*..*..*'],
+    ['True', '*'],
+    ['True', '***'],
+    ['True', '*.......*.......*'],
+    ['True', '**'],
+    ['True', '*.*'],
+    ['False', '*..*...*..*..*..*..*'],
+    ['False', '*..*..*..*..*..**..*'],
+    ['False', '*...*..*..*'],
 ]
 
 for e in td:
-    print(f'MaximumDiscount: {e[0]}: {MaximumDiscount(*e[1:])}')
-
+    print(f'LineAnalysis: {e[0]}: {LineAnalysis(*e[1:])}')
 
