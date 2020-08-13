@@ -1,18 +1,12 @@
-from algo_01_19 import SherlockValidString
+from algo_01_20 import TreeOfLife
 
 td = [
-    ['x', 'x'],
-    ['True', 'xx'],
-    ['True', 'xz'],
-    ['True', 'xyz'],
-    ['True', 'xxz'],
-    ['True', 'xyzaa'],
-    ['True', 'xxyyz'],
-    ['False', 'xyzzz'],
-    ['False', 'xxyyza'],
-    ['False', 'xxyyzabc'],
-    ['True', 'xxxxxyyyyy'],
+    ['12: [".+..","..+.",".+.."]', 3, 4, 12, [".+..","..+.",".+.."]],
+    [' 3: ["."]', 1, 1, 3, ["."]],
+    [' 4: [".+"]', 1, 2, 4, [".+"]],
+    [' 3: ["..","++"]', 2, 2, 3, ["..","++"]],
+    [' 4: [".+.","+.+"]', 2, 3, 4, [".+.","..+"]],
 ]
 
 for e in td:
-    print(f'SherlockValidString: \'{e[0]}\': {SherlockValidString(*e[1:])}')
+    print(f'TreeOfLife: \'{e[0]}\': {TreeOfLife(*e[1:])}')
