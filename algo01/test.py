@@ -1,14 +1,17 @@
-from algo_01_18 import BiggerGreater
+from algo_01_19 import SherlockValidString
 
 td = [
-    ['', 'а'],
-    ['аz', 'zа'],
-    ['яа', 'ая'],
-    ['', 'fff'],
-    ['нкмл', 'нклм'],
-    ['викб', 'вибк'],
-    ['ибвк', 'вкиб'],
+    ['x', 'x'],
+    ['True', 'xx'],
+    ['True', 'xz'],
+    ['True', 'xyz'],
+    ['True', 'xxz'],
+    ['True', 'xyzaa'],
+    ['True', 'xxyyz'],
+    ['False', 'xyzzz'],
+    ['False', 'xxyyza'],
+    ['False', 'xxyyzabc'],
 ]
 
 for e in td:
-    print(f'BiggerGreater: \'{e[0]}\': {BiggerGreater(*e[1:])}')
+    print(f'SherlockValidString: \'{e[0]}\': {SherlockValidString(*e[1:])}')
