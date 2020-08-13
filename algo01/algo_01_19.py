@@ -14,6 +14,9 @@ def SherlockValidString(s):
             map[char] = s.count(char)
     code = list(map.values())
     
+    if len(set(code)) <= 1:
+        return True
+    
     for (ix, el) in enumerate(code):
         subl = code[:ix]+code[ix+1:]
         if el != 1:
