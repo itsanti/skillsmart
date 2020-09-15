@@ -1,9 +1,10 @@
-from algo_01_22 import TransformTransform
+from algo_01_23 import BalancedParentheses
 
 td = [
-    ['False', [1, 2, 4], 3],
-    ['True', [1,3], 2],
+    ['()', 1],
+    ['(()) ()()', 2],
+    ['((())) (()()) (())() ()(()) ()()()', 3],
 ]
 
 for e in td:
-    print(f'TransformTransform: \'{e[0]}\': {TransformTransform(*e[1:])}')
+    print(f'BalancedParentheses: \'{e[0]}\': |{BalancedParentheses(*e[1:])}|')
