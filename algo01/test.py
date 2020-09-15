@@ -1,12 +1,9 @@
-from algo_01_21 import MatrixTurn
+from algo_01_22 import TransformTransform
 
 td = [
-    ['', ["123456", "234567", "345678", "456789"], 4, 6, 3],
-    ['', ["12", "34"], 2, 2, 1],
-    ['', ["12", "34"], 2, 2, 2],
-    ['', ["12", "34"], 2, 2, 3],
-    ['', ["12", "34"], 2, 2, 4],
+    ['False', [1, 2, 4], 3],
+    ['True', [1,3], 2],
 ]
 
 for e in td:
-    print(f'MatrixTurn: \'{e[0]}\': {MatrixTurn(*e[1:])}')
+    print(f'TransformTransform: \'{e[0]}\': {TransformTransform(*e[1:])}')
