@@ -1,0 +1,54 @@
+6.1. уровни абстракции в именах
+
+    searchMinMax(int[] array) - searchMinMaxInArray(int[] array)
+    // поиск значений не где-то, а в конкретном массиве
+
+    checkBalance(int[] arr) - isArrayBalanced(int[] arr)
+    // проверка что массив сбалансирован, а не какой-то баланс
+
+    paint(Graphics graphic) - paintGraphics(Graphics graphic)
+    // не отрисовка, а отрисовка графики
+
+    limitJump - limitAnimalJump
+    // ограничить уровень конкретным классом    
+    
+    volume - plateVolume
+    // не просто объем, а объем тарелки
+
+
+6.2. имена как термины из информатики
+
+    commands - commandStack
+    // подсказывает о способе организации выполнения команд
+    
+    words - wordsList
+    // список слов из данной строки
+    
+    array - matrix
+    // матрица значений
+    
+    uniqElements - setOfElements
+    // набор неповторяющихся элементов, множество
+
+
+6.3. контекст для имен переменных
+
+    price - bookPrice
+    // хорошо как атрибут класса, но как параметр лучше уточнить
+    
+    errorCode - uploadErrorCode
+    
+    minValue - rangeMinValue
+
+
+6.4. 8-20 символов в диапазоне
+
+    nums - phoneNumbers
+    
+    endt - endRunTime
+
+    index - phoneBaseIndex
+    
+    result - selectedRows
+    
+    srchPat - searchPattern
