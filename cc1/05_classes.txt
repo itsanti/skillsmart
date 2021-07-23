@@ -1,0 +1,33 @@
+3.1. пять имён классов
+
+    UserInfo - Account
+    
+    Content - BlogPostContent
+    
+    Config - SiteConfig
+    
+    SendMessage - MessageSender
+    
+    BookData - Book    
+
+3.2. семь имён методов и объектов
+
+    readName() - getName()
+    // для получения/установки значений использовать Get/Set методы
+    
+    downloadPage() - fetchResource()
+    
+    writeRecord() - save()
+    // логично использовать название save для сохранения изменений
+    
+    getRandomSeq() - generateSeq()
+    // генерировать можно разные объекты, лучше выбрать более общее слово
+    
+    runGame() - startGame()
+    // start больше подходит для описания начала какого-то процесса
+    
+    getFromFile(), loadFromFile() - readFromFile()
+    // лучше использовать read, как общий способ чтения данных из разных источников
+    
+    placeOnBoard() - fillBoard()
+    
