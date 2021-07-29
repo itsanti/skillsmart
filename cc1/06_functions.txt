@@ -1,0 +1,33 @@
+readName() - getName()
+// для получения/установки значений использовать Get/Set методы
+
+checkSend() - isSended()
+// is используем для проверок
+
+writePost() - savePost()
+// сохранение записи в БД
+
+loadPage() - loadPageFromDB()
+// побочный эффект - обращение к базе данных
+
+dumpObject() - saveObjectToFile()
+// описываемый побочный эффект
+
+newConnect() - createNewConnection()
+// описывайте всё, что метод выполняет
+
+collectData() - collectReportSubtotals()
+// не использовать Data в названии, описывать подробнее
+
+download() - downloadPage()
+// глагол+объект
+
+clear() - clearPostTitle()
+
+printInfo() - printUserDetails()
+
+dateDelta() - getDateDeltaInDays()
+// get + подробное описание
+
+logTask() - logTaskDaily()
+// конкретнее указываем периодичность логирования
