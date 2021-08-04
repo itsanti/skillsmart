@@ -1,0 +1,11 @@
+3.1.
+Dumper dumper = Dumper.ToFile("path/to/file");
+
+Form form = Form.FromJson(jsonFormObject);
+
+Notification notification = Notification.EmailNotification("test@test.com");
+
+3.2
+GraphicObject solidLine = new Line("solid"); 
+
+Printable magazine = new Magazine("Linux Format");
