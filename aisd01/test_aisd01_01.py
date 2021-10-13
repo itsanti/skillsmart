@@ -59,6 +59,11 @@ def test_delete(my_list):
     my_list.delete(13, True)
     my_list.add_in_tail(Node(15))
     my_list.delete(11, True)
+
+    # delete only one element
+    my_list.clean()
+    my_list.add_in_tail(Node(13))
+    my_list.delete(13, True)
     my_list.print_all_nodes()
 
 

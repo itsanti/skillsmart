@@ -48,6 +48,8 @@ class LinkedList:
         if self.head.value == val:
             result = self.head
             self.head = self.head.next
+            if self.head is None:
+                self.tail = None
         else:
             node = self.head.next
             prev_node = self.head
