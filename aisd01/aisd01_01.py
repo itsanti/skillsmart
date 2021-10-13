@@ -61,6 +61,7 @@ class LinkedList:
                     result = node
                     break
                 prev_node = node
+                node = node.next
         if all and result is not None:
             self.delete(val, True)
 
