@@ -86,6 +86,10 @@ def test_insert(my_list):
     afterNode = my_list.find(55)
     my_list.insert(afterNode, Node(56))
     my_list.insert(afterNode, Node(54))
+
+    my_list.clean()
+    my_list.insert(None, Node(42))
+    my_list.insert(None, Node(43))
     my_list.print_all_nodes()
 
 
