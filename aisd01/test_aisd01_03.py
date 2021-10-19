@@ -29,6 +29,12 @@ def test_delete(da):
     assert da.capacity == 32
     da.delete(4)
     assert da.capacity == 21
+    da.delete(4)
+    da.delete(4)
+    da.delete(4)
+    da.delete(4)
+    da.delete(4)
+    assert da.capacity == 16
 
 
 def test_insert(da):
