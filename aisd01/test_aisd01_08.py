@@ -20,9 +20,13 @@ def test_seek_slot(ht):
     assert ht.seek_slot('aaa') == 7
     assert ht.seek_slot('aa') == 15
     assert ht.seek_slot('aab') == 16
+    assert ht.seek_slot('aab') == 16
 
 
 def test_put(ht):
+    print(ht.put(''))
+    print(ht.put(''))
+    assert ht.put('aaa') == 7
     assert ht.put('aaa') == 7
     assert ht.put('aa') == 15
     assert ht.put('aab') == 16
