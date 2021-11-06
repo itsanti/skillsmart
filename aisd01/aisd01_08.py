@@ -17,10 +17,10 @@ class HashTable:
     def seek_slot(self, value):
         # находит индекс пустого слота для значения, или None
         slot = self.hash_fun(value)
-        if self.slots[slot] is not None:
+        if self.slots[slot] is not None and value != self.slots[slot]:
             start_seek = slot
             is_end = False
-            if self.slots[slot] is not None and value != self.slots[slot]:
+            while self.slots[slot] is not None:
                 slot = (slot + self.step) % self.size
                 if slot <= start_seek:
                     is_end = True
