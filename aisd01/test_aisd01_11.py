@@ -1,5 +1,5 @@
 import pytest
-from aisd01_11 import BloomFilter
+from aisd01_11_bits import BloomFilter
 
 
 @pytest.fixture
