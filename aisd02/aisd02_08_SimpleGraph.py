@@ -1,8 +1,3 @@
-# https://skillsmart.ru/algo/15-121-cm/x8b3ba28f6.html
-# https://github.com/iiinjoy/algorithms_python_lessons/blob/master/level2/simple_graph.py
-# https://github.com/olegnizamov/finish_education/blob/master/C%23/AlgorithmsDataStructures/SimpleGraph/ConsoleApp1/AlgorithmsDataStructures.cs
-# https://github.com/optima740/Data_structures-Python-/blob/master/level_2/My_SimpleGraph.py
-
 class Vertex:
 
     def __init__(self, val):
