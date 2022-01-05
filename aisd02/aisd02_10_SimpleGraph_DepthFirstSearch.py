@@ -87,4 +87,4 @@ class SimpleGraph:
                 if len(path) == 0:
                     return []
                 else:
-                    current_vertex = path.pop()
+                    current_vertex = self.vertex.index(path.pop())

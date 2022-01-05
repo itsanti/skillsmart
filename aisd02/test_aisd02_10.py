@@ -33,5 +33,16 @@ def sg5():
     return sg5
 
 
-def test_DepthFirstSearch(sg5):
+@pytest.fixture
+def sg3():
+    sg3 = SimpleGraph(3)
+    sg3.AddVertex('A')
+    sg3.AddVertex('B')
+    sg3.AddEdge(0, 1)
+    sg3.AddVertex('C')
+    return sg3
+
+
+def test_DepthFirstSearch(sg3, sg5):
+    print(sg3.DepthFirstSearch(0, 2))
     print(sg5.DepthFirstSearch(4, 2))
